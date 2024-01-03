@@ -20,6 +20,11 @@ repositories {
 }
 
 dependencies {
+    // Use JUnit Jupiter for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:31.1-jre'
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.16.1'
@@ -32,7 +37,7 @@ dependencies {
 
 
 }
-
+/*
 application {
     // Define the main class for the application.
     mainClass = 'gradleseleniumjavacucumber.App'
@@ -42,3 +47,4 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+*/
